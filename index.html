@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
@@ -20,97 +24,133 @@
   </head>
   <body>
     <header>
-      <a class="logo link" href="./index.html">Brit<span class="logo-item">lex</span></a>
+      <div class="container">
+        <a class="logo link" href="./index.html">Brit<span class="logo-item">lex</span></a>
 
-      <nav class="navigations">
-        <ul class="navigations-list list">
-          <li><a class="navigations-link link" href="./index.html">Home</a></li>
-          <li><a class="navigations-link link" href="">Skills</a></li>
-          <li><a class="navigations-link link" href="">About Us</a></li>
-          <li><a class="navigations-link link" href="">Pricing</a></li>
-          <li><a class="navigations-link link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <button class="header-button btn" type="button">Let’s Talk</button>
+        <nav class="navigations">
+          <ul class="navigations-list list">
+            <li><a class="navigations-link link" href="./index.html">Home</a></li>
+            <li><a class="navigations-link link" href="">Skills</a></li>
+            <li><a class="navigations-link link" href="">About Us</a></li>
+            <li><a class="navigations-link link" href="">Pricing</a></li>
+            <li><a class="navigations-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="header-button btn" type="button">Let’s Talk</button>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Learn Any Foreign Language</h1>
-        <p class="hero-text">
-          With our teachers who write a program for each student, you will be able to make your
-          first sketch after the first lesson.
-        </p>
-        <button class="hero-button btn" type="button">Get started</button>
-        <img src="./images/hero-bg.png" width="654" height="510" alt="map language" />
+        <div class="container hero-wrapper">
+          <div class="hero-content">
+            <h1 class="hero-title">Learn Any&nbsp;Foreign Language</h1>
+            <p class="hero-text">
+              With our teachers who write a program for each student, you will be able to make your
+              first sketch after the first lesson.
+            </p>
+            <button class="hero-button btn" type="button">Get started</button>
+          </div>
+          <img src="./images/hero-bg.png" width="654" height="510" alt="map language" />
+        </div>
       </section>
-      <section class="skills">
-        <h2 class="skills-title title">Skills</h2>
-        <ul class="list">
-          <li class="skills-item">
-            <img src="./images/skils-1.png" width="390" height="390" alt="Speaking" />
-            <h3 class="min-title">Speaking</h3>
-            <p class="skills-text">
-              Improve your English skills and confidence. Live classes and interactive lessons
-              online. 20% extra free for a limited time only
-            </p>
-            <p class="skills-text">
-              Learn English online and improve your skills through our high-quality courses and
-              resources – all designed for adult language learners.
-            </p>
-            <button class="skills-btn btn" type="button">Learn more</button>
-          </li>
-          <li class="skills-item">
-            <img src="./images/skils-2.png" width="390" height="264" alt="Writing car" />
-            <h3 class="min-title">Writing</h3>
-            <p class="skills-text">
-              One of the most important and extensive areas of natural science, the science that
-              studies substances, also their composition
-            </p>
-            <button class="skills-btn btn" type="button">Learn more</button>
-          </li>
-          <li class="skills-item">
-            <img src="./images/skils-3.png" width="390" height="264" alt="Reading boock" />
-            <h3 class="min-title">Reading</h3>
-            <p class="skills-text">
-              Perception and response actions of the user resulting from the use and/or upcoming use
-              of the product, system or service
-            </p>
-            <button class="skills-btn btn" type="button">Learn more</button>
-          </li>
-          <li class="skills-item">
-            <img src="./images/skils-4.png" width="408" height="274" alt="Listening test" />
-            <h3 class="min-title">Listening</h3>
-            <p class="skills-text">
-              Here you can find activities to practise your listening skills. Listening will help
-              you to improve your understanding
-            </p>
-            <button class="skills-btn btn" type="button">Learn more</button>
-          </li>
-        </ul>
+      <section class="skills" id="">
+        <div class="container">
+          <h2 class="skills-title title">Skills</h2>
+          <ul class="list">
+            <li class="skills-item">
+              <img
+                class="skills-image"
+                src="./images/skils-1.png"
+                width="390"
+                height="390"
+                alt="Speaking"
+              />
+              <h3 class="skills-item-title min-title">Speaking</h3>
+              <p class="skills-text">
+                Improve your English skills and confidence. Live classes and interactive lessons
+                online. 20% extra free for a limited time only
+              </p>
+              <p class="skills-text">
+                Learn English online and improve your skills through our high-quality courses and
+                resources – all designed for adult language learners.
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </li>
+            <li class="skills-item">
+              <img
+                class="skills-image"
+                src="./images/skils-2.png"
+                width="390"
+                height="264"
+                alt="Writing car"
+              />
+              <h3 class="skills-item-title min-title">Writing</h3>
+              <p class="skills-text">
+                One of the most important and extensive areas of natural science, the science that
+                studies substances, also their composition
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </li>
+            <li class="skills-item">
+              <img
+                class="skills-image"
+                src="./images/skils-3.png"
+                width="390"
+                height="264"
+                alt="Reading boock"
+              />
+              <h3 class="skills-item-title min-title">Reading</h3>
+              <p class="skills-text">
+                Perception and response actions of the user resulting from the use and/or upcoming
+                use of the product, system or service
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </li>
+            <li class="skills-item">
+              <img
+                class="skills-image"
+                src="./images/skils-4.png"
+                width="408"
+                height="274"
+                alt="Listening test"
+              />
+              <h3 class="skills-item-title min-title">Listening</h3>
+              <p class="skills-text">
+                Here you can find activities to practise your listening skills. Listening will help
+                you to improve your understanding
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          The model offers a framework for discussing problems related to the user's experience, as
-          well as possible ways and means of solving them. Application development begins at the top
-          level (strategy), where the future software product is described quite abstractly from the
-          point of view of the expectations of both users and the customer.
-        </p>
-        <ul class="list">
-          <li>
-            <p>800</p>
-            <p>Pupils</p>
-          </li>
-          <li>
-            <p>18</p>
-            <p>Teachers</p>
-          </li>
-          <li>
-            <p>6</p>
-            <p>Foreign languages</p>
-          </li>
-        </ul>
-        <img src="./images/about.jpg" width="540" height="540" alt="people at mountain" />
+      <section class="about">
+        <div class="container about-wrapper">
+          <div class="about-content">
+            <h2 class="title">About Us</h2>
+            <p class="about-text">
+              The model offers a framework for discussing problems related to the user's experience,
+              as well as possible ways and means of solving them. Application development begins at
+              the top level (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+            <ul>
+              <li class="about-item">
+                <p class="about-stats">800</p>
+                <p class="about-stats-name">Pupils</p>
+              </li>
+              <li class="about-item">
+                <p class="">18</p>
+                <p class="about-stats-name">Teachers</p>
+              </li>
+              <li class="about-item">
+                <p cclass="about-stats">6</p>
+                <p class="about-stats-name">Foreign languages</p>
+              </li>
+            </ul>
+          </div>
+          <img src="./images/about.jpg" width="540" height="540" alt="people at mountain" />
+        </div>
       </section>
       <section>
         <h2>Pricing</h2>
