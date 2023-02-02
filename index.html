@@ -24,16 +24,25 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header-container">
         <a class="logo link" href="./index.html">Brit<span class="logo-item">lex</span></a>
-
         <nav class="navigations">
-          <ul class="navigations-list list">
-            <li><a class="navigations-link link" href="./index.html">Home</a></li>
-            <li><a class="navigations-link link" href="">Skills</a></li>
-            <li><a class="navigations-link link" href="">About Us</a></li>
-            <li><a class="navigations-link link" href="">Pricing</a></li>
-            <li><a class="navigations-link link" href="">Contacts</a></li>
+          <ul class="navigations-list">
+            <li class="navigations-item">
+              <a class="navigations-link link" href="./index.html">Home</a>
+            </li>
+            <li class="navigations-item">
+              <a class="navigations-link link" href="">Skills</a>
+            </li>
+            <li class="navigations-item">
+              <a class="navigations-link link" href="">About Us</a>
+            </li>
+            <li class="navigations-item">
+              <a class="navigations-link link" href="">Pricing</a>
+            </li>
+            <li class="navigations-item">
+              <a class="navigations-link link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <button class="header-button btn" type="button">Let’s Talk</button>
@@ -56,7 +65,7 @@
       <section class="skills" id="">
         <div class="container">
           <h2 class="skills-title title">Skills</h2>
-          <ul class="list">
+          <ul class="skills-list">
             <li class="skills-item">
               <img
                 class="skills-image"
@@ -114,12 +123,14 @@
                 height="274"
                 alt="Listening test"
               />
-              <h3 class="skills-item-title min-title">Listening</h3>
-              <p class="skills-text">
-                Here you can find activities to practise your listening skills. Listening will help
-                you to improve your understanding
-              </p>
-              <button class="skills-btn btn" type="button">Learn more</button>
+              <div class="skills-content">
+                <h3 class="skills-item-title min-title">Listening</h3>
+                <p class="skills-text">
+                  Here you can find activities to practise your listening skills. Listening will
+                  help you to improve your understanding
+                </p>
+                <button class="skills-btn btn" type="button">Learn more</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -134,17 +145,17 @@
               the top level (strategy), where the future software product is described quite
               abstractly from the point of view of the expectations of both users and the customer.
             </p>
-            <ul>
+            <ul class="stats-list">
               <li class="about-item">
                 <p class="about-stats">800</p>
                 <p class="about-stats-name">Pupils</p>
               </li>
               <li class="about-item">
-                <p class="">18</p>
+                <p class="about-stats">18</p>
                 <p class="about-stats-name">Teachers</p>
               </li>
               <li class="about-item">
-                <p cclass="about-stats">6</p>
+                <p class="about-stats">6</p>
                 <p class="about-stats-name">Foreign languages</p>
               </li>
             </ul>
@@ -152,31 +163,70 @@
           <img src="./images/about.jpg" width="540" height="540" alt="people at mountain" />
         </div>
       </section>
-      <section>
-        <h2>Pricing</h2>
-        <ul class="list">
-          <li>
-            <img src="./images/price-1.png" alt="online test" width="426" height="320" />
-            <h3>Self-study online course</h3>
-            <p>
-              Start learning English online in live classes with qualified EC teachers and students
-              from all over the world.
-            </p>
-            <p>£5.99 per month</p>
-          </li>
-          <li>
-            <img src="./images/price-2.png" alt="lesson" width="426" height="320" />
-            <h3>Live online classes</h3>
-            <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-            <p>£12.99 per month</p>
-          </li>
-          <li>
-            <img src="./images/price-3.png" alt="online meeting" width="426" height="320" />
-            <h3>Personal Tuition</h3>
-            <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-            <p>£12.99 per month</p>
-          </li>
-        </ul>
+      <section class="price">
+        <div class="container">
+          <h2 class="price-title title">Pricing</h2>
+          <ul class="price-list">
+            <li class="price-item">
+              <div class="price-item-top">
+                <img
+                  class="price-img"
+                  src="./images/price-1.png"
+                  alt="online test"
+                  width="426"
+                  height="320"
+                />
+                <h3 class="price-list-title min-title">Self-study online course</h3>
+                <p class="price-text">
+                  Start learning English online in live classes with qualified EC teachers and
+                  students from all over the world.
+                </p>
+              </div>
+              <div class="price-bottom">
+                <p class="price-bottom-count">£5.99</p>
+                <p class="price-bottom-period">per month</p>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-item-top">
+                <img
+                  class="price-img"
+                  src="./images/price-2.png"
+                  alt="lesson"
+                  width="426"
+                  height="320"
+                />
+                <h3 class="price-list-title min-title">Live online classes</h3>
+                <p class="price-text">
+                  Interactive group classes with expert teachers. Free 7-day trial
+                </p>
+              </div>
+              <div class="price-bottom">
+                <p class="price-bottom-count">£12.99</p>
+                <p class="price-bottom-period">per month</p>
+              </div>
+            </li>
+            <li class="price-item">
+              <div class="price-item-top">
+                <img
+                  class="price-img"
+                  src="./images/price-3.png"
+                  alt="online meeting"
+                  width="426"
+                  height="320"
+                />
+                <h3 class="price-list-title min-title">Personal Tuition</h3>
+                <p class="price-text">
+                  Online one-to-one English tutoring – enjoy our first session for only $1
+                </p>
+              </div>
+              <div class="price-bottom">
+                <p class="price-bottom-count">£12.99</p>
+                <p class="price-bottom-period">per month</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <img src="./images/contact.png" alt="girl run" width="425" height="430" />

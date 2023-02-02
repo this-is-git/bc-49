@@ -63,6 +63,7 @@ body {
 .logo {
   color: var(--black-color);
   font-size: 36px;
+  margin-right: auto;
 }
 
 .title {
@@ -86,6 +87,24 @@ body {
 
 .header {
   padding-top: 55px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigations {
+  margin-right: 121px;
+}
+
+.navigations-list {
+  display: flex;
+}
+
+.navigations-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-item {
@@ -113,8 +132,13 @@ body {
   padding-top: 101px;
 }
 
+.hero-wrapper {
+  display: flex;
+}
+
 .hero-content {
   width: 546px;
+  margin-right: 123px;
 }
 
 .hero-title {
@@ -159,8 +183,26 @@ body {
   margin-bottom: 20px;
 }
 
+.skills-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .skills-item {
   padding: 32px 18px;
+}
+
+.skills-item:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.skills-item:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .skills-item-title {
@@ -195,8 +237,28 @@ body {
   padding-bottom: 182px;
 }
 
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about-content {
   max-width: 652px;
+  margin-right: 146px;
+}
+
+.stats-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item {
+  max-width: 113px;
+  text-align: center;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 130px;
 }
 
 .about-text {
@@ -209,4 +271,41 @@ body {
   font-size: 48px;
   color: var(--min-title-color);
   margin-bottom: 6px;
+}
+
+/* price */
+
+.price-list {
+  display: flex;
+  gap: 30px;
+}
+
+.price-item-top {
+  margin-bottom: 30px;
+}
+
+.price-img {
+  margin-bottom: 30px;
+}
+.price-item {
+  width: calc((100% - 2 * 30px) / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.price-list-title {
+  margin-bottom: 20px;
+  line-height: calc(48 / 30);
+}
+
+.price-bottom {
+  display: flex;
+  gap: 28px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  padding: 0 23px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  max-width: 260px;
+  margin-top: auto;
 }
