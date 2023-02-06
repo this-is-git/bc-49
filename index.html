@@ -45,40 +45,49 @@
             </li>
           </ul>
         </nav>
-        <button class="header-button btn" type="button">Let’s Talk</button>
+        <button class="header-button btn" type="button" data-modal-open>Let’s Talk</button>
       </div>
     </header>
     <main>
       <section class="icons">
         <ul>
+          <svg class="icon" width="20" height="20">
+            <use href=""></use>
+          </svg>
           <li class="item-icon">
-            <ul  class="item-box">
-              <li>
+            <!-- <ul  class="item-box">
+              <li class="item-item">
                 <a class="icon-link" href="">
                 <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-insta">
               </svg>
             </a></li>
-              <li>
-                <a class="icon-link" href="" aria-label="твітер">
+              <li class="item-item">
+                <a class="icon-link" href="" aria-label="">
                 <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-twitter">
               </svg>
             </a></li>
-              <li>
+              <li class="item-item">
                 <a class="icon-link" href="">
                 <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-facebook">
               </svg>
             </a></li>
-              <li>
+              <li class="item-item">
                 <a class="icon-link" href="">
                 <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-linkedin">
                 </svg>
                 </a>
               </li>
-            </ul>
+            </ul> -->
+            <a class="icon-link" href="">
+                <svg class="icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-insta">
+              </svg>
+              +23345435345
+            </a>
           </li>
         </ul>
       </section>
@@ -281,5 +290,11 @@
         <li><a class="link" href="#">Cookie Policy</a></li>
       </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>closed</button>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
