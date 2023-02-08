@@ -108,7 +108,7 @@ body.is-active {
   padding-top: 55px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -118,15 +118,15 @@ body.is-active {
   margin-right: 121px;
 }
 
-.navigations-list {
+.navigations__list {
   display: flex;
 }
 
-.navigations-item:not(:last-child) {
+.navigations__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.logo-item {
+.logo__item {
   color: var(--logo-item-color);
 }
 
@@ -144,7 +144,7 @@ body.is-active {
   color: var(--main-color);
 }
 
-.header-button {
+.header__button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -158,8 +158,8 @@ body.is-active {
     border-color var(--transition-dir) var(--transition-time-func);
 }
 
-.header-button:hover,
-.header-button:focus {
+.header__button:hover,
+.header__button:focus {
   background-color: var(--min-title-color);
   color: var(--white-color);
   border-color: var(--white-color);
@@ -171,16 +171,16 @@ body.is-active {
   padding-top: 101px;
 }
 
-.hero-wrapper {
+.hero__wrapper {
   display: flex;
 }
 
-.hero-content {
+.hero__content {
   width: 546px;
   margin-right: 123px;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 600;
   font-size: 64px;
   line-height: calc(80 / 64);
@@ -188,7 +188,7 @@ body.is-active {
   margin-bottom: 57px;
 }
 
-.hero-text {
+.hero__text {
   font-size: 24px;
   margin-bottom: 43px;
   text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px,
@@ -197,7 +197,7 @@ body.is-active {
     rgb(0, 0, 0) 0.96017px -0.279415px 0px;
 }
 
-.hero-button {
+.hero__button {
   font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -217,7 +217,7 @@ body.is-active {
   padding-bottom: 178px;
 }
 
-.skills-title {
+.skills__title {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -228,36 +228,37 @@ body.is-active {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.skills-item {
+.skills-list__item {
   padding: 32px 18px;
+  background-color: var(--secondary-bg-color);
 }
 
-.skills-item:first-child {
+.skills-list__item:first-child {
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.skills-item:last-child {
+.skills-list__item:last-child {
   display: flex;
   flex-direction: row-reverse;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 
-.skills-item-title {
+.skills-list__title {
   margin-bottom: 20px;
 }
 
-.skills-text {
+.skills-list__text {
   font-size: 16px;
   margin-bottom: 30px;
 }
 
-.skills-image {
+.skills-list__image {
   margin-bottom: 24px;
 }
 
-.skills-btn {
+.skills-list__btn {
   font-weight: 500;
   font-size: 18px;
   color: var(--white-color);
@@ -267,21 +268,17 @@ body.is-active {
   padding-bottom: 16px;
 }
 
-.skills-item {
-  background-color: var(--secondary-bg-color);
-}
-
 /* about */
 .about {
   padding-bottom: 182px;
 }
 
-.about-wrapper {
+.about__wrapper {
   display: flex;
   align-items: flex-start;
 }
 
-.about-content {
+.about__text-content {
   max-width: 652px;
   margin-right: 146px;
 }
@@ -291,21 +288,21 @@ body.is-active {
   justify-content: center;
 }
 
-.about-item {
+.stats-list__item {
   max-width: 113px;
   text-align: center;
 }
 
-.about-item:not(:last-child) {
+.stats-list__item:not(:last-child) {
   margin-right: 130px;
 }
 
-.about-text {
+.about__text {
   margin-bottom: 30px;
   line-height: calc(36 / 20);
 }
 
-.about-stats {
+.stats-list__num {
   font-weight: 600;
   font-size: 48px;
   color: var(--min-title-color);
@@ -319,25 +316,25 @@ body.is-active {
   gap: 30px;
 }
 
-.price-item-top {
+.price-list__top {
   margin-bottom: 30px;
 }
 
-.price-img {
+.price-list__img {
   margin-bottom: 30px;
 }
-.price-item {
+.price-list__item {
   width: calc((100% - 2 * 30px) / 3);
   display: flex;
   flex-direction: column;
 }
 
-.price-list-title {
+.price-list__title {
   margin-bottom: 20px;
   line-height: calc(48 / 30);
 }
 
-.price-bottom {
+.price-list__bottom {
   display: flex;
   gap: 28px;
   background-color: #eeeeee;
@@ -521,9 +518,27 @@ body.is-active {
 }
 
 .modal-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   position: absolute;
   top: 8px;
   right: 8px;
+  color: #000000;
+  transition: color 250ms linear;
+}
+
+.modal-button:hover {
+  color: #2196f3;
+}
+
+.modal__icon {
+  fill: currentColor;
 }
 
 /* custom checkbox */

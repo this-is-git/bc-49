@@ -23,29 +23,31 @@
     <link rel="stylesheet" class="link" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <a class="logo link" href="./index.html">Brit<span class="logo-item">lex</span></a>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html"
+          >Brit<span class="logo__item logo__item--black">lex</span></a
+        >
         <nav class="navigations">
-          <ul class="navigations-list">
-            <li class="navigations-item">
-              <a class="navigations-link link" href="./index.html">Home</a>
+          <ul class="navigations__list">
+            <li class="navigations__item">
+              <a class="navigations__link" href="./index.html">Home</a>
             </li>
-            <li class="navigations-item">
-              <a class="navigations-link link" href="">Skills</a>
+            <li class="navigations__item">
+              <a class="navigations__link l" href="">Skills</a>
             </li>
-            <li class="navigations-item">
-              <a class="navigations-link link" href="">About Us</a>
+            <li class="navigations__item">
+              <a class="navigations__link" href="">About Us</a>
             </li>
-            <li class="navigations-item">
-              <a class="navigations-link link" href="">Pricing</a>
+            <li class="navigations__item">
+              <a class="navigations__link" href="">Pricing</a>
             </li>
-            <li class="navigations-item">
-              <a class="navigations-link link" href="">Contacts</a>
+            <li class="navigations__item">
+              <a class="navigations__link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button class="header-button btn" type="button" data-modal-open>Let’s Talk</button>
+        <button class="header__button btn" type="button" data-modal-open>Let’s Talk</button>
       </div>
     </header>
     <main>
@@ -108,179 +110,191 @@
         </ul>
       </section>
       <section class="hero">
-        <div class="container hero-wrapper">
-          <div class="hero-content">
-            <h1 class="hero-title">Learn Any&nbsp;Foreign Language</h1>
-            <p class="hero-text">
+        <div class="container hero__wrapper">
+          <div class="hero__content">
+            <h1 class="hero__title">Learn Any&nbsp;Foreign Language</h1>
+            <p class="hero__text">
               With our teachers who write a program for each student, you will be able to make your
               first sketch after the first lesson.
             </p>
-            <button class="hero-button btn" type="button">Get started</button>
+            <button class="hero__button btn" type="button">Get started</button>
           </div>
-          <img src="./images/hero-bg.png" width="654" height="510" alt="map language" />
+          <img
+            class="hero__image"
+            src="./images/hero-bg.png"
+            width="654"
+            height="510"
+            alt="map language"
+          />
         </div>
       </section>
       <section class="skills" id="">
         <div class="container">
-          <h2 class="skills-title title">Skills</h2>
-          <ul class="skills-list">
-            <li class="skills-item">
+          <h2 class="skills__title title">Skills</h2>
+          <ul class="skills__list skills-list">
+            <li class="skills-list__item">
               <img
-                class="skills-image"
+                class="skills-list__image"
                 src="./images/skils-1.png"
                 width="390"
                 height="390"
                 alt="Speaking"
               />
-              <h3 class="skills-item-title min-title">Speaking</h3>
-              <p class="skills-text">
+              <h3 class="skills-list__title min-title">Speaking</h3>
+              <p class="skills-list__text">
                 Improve your English skills and confidence. Live classes and interactive lessons
                 online. 20% extra free for a limited time only
               </p>
-              <p class="skills-text">
+              <p class="skills-list__text">
                 Learn English online and improve your skills through our high-quality courses and
                 resources – all designed for adult language learners.
               </p>
-              <button class="skills-btn btn" type="button">Learn more</button>
+              <button class="skills-list__btn btn" type="button">Learn more</button>
             </li>
-            <li class="skills-item">
+            <li class="skills-list__item">
               <img
-                class="skills-image"
+                class="skills-list__image"
                 src="./images/skils-2.png"
                 width="390"
                 height="264"
                 alt="Writing car"
               />
-              <h3 class="skills-item-title min-title">Writing</h3>
-              <p class="skills-text">
+              <h3 class="skills-list__title min-title">Writing</h3>
+              <p class="skills-list__text">
                 One of the most important and extensive areas of natural science, the science that
                 studies substances, also their composition
               </p>
-              <button class="skills-btn btn" type="button">Learn more</button>
+              <button class="skills-list__btn btn" type="button">Learn more</button>
             </li>
-            <li class="skills-item">
+            <li class="skills-list__item">
               <img
-                class="skills-image"
+                class="skills-list__image"
                 src="./images/skils-3.png"
                 width="390"
                 height="264"
                 alt="Reading boock"
               />
-              <h3 class="skills-item-title min-title">Reading</h3>
-              <p class="skills-text">
+              <h3 class="skills-list__title min-title">Reading</h3>
+              <p class="skills-list__text">
                 Perception and response actions of the user resulting from the use and/or upcoming
                 use of the product, system or service
               </p>
-              <button class="skills-btn btn" type="button">Learn more</button>
+              <button class="skills-list__btn btn" type="button">Learn more</button>
             </li>
-            <li class="skills-item">
+            <li class="skills-list__item">
               <img
-                class="skills-image"
+                class="skills-list__image"
                 src="./images/skils-4.png"
                 width="408"
                 height="274"
                 alt="Listening test"
               />
               <div class="skills-content">
-                <h3 class="skills-item-title min-title">Listening</h3>
-                <p class="skills-text">
+                <h3 class="skills-list__title min-title">Listening</h3>
+                <p class="skills-list__text">
                   Here you can find activities to practise your listening skills. Listening will
                   help you to improve your understanding
                 </p>
-                <button class="skills-btn btn" type="button">Learn more</button>
+                <button class="skills-list__btn btn" type="button">Learn more</button>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="about">
-        <div class="container about-wrapper">
-          <div class="about-content">
-            <h2 class="title">About Us</h2>
-            <p class="about-text">
+        <div class="container about__wrapper">
+          <div class="about__text-content">
+            <h2 class="about__title title">About Us</h2>
+            <p class="about__text">
               The model offers a framework for discussing problems related to the user's experience,
               as well as possible ways and means of solving them. Application development begins at
               the top level (strategy), where the future software product is described quite
               abstractly from the point of view of the expectations of both users and the customer.
             </p>
-            <ul class="stats-list">
-              <li class="about-item">
-                <p class="about-stats">800</p>
-                <p class="about-stats-name">Pupils</p>
+            <ul class="about__list stats-list">
+              <li class="stats-list__item">
+                <p class="stats-list__num">800</p>
+                <p class="stats-list__name">Pupils</p>
               </li>
-              <li class="about-item">
-                <p class="about-stats">18</p>
-                <p class="about-stats-name">Teachers</p>
+              <li class="stats-list__item">
+                <p class="stats-list__num">18</p>
+                <p class="stats-list__name">Teachers</p>
               </li>
-              <li class="about-item">
-                <p class="about-stats">6</p>
-                <p class="about-stats-name">Foreign languages</p>
+              <li class="stats-list__item">
+                <p class="stats-list__num">6</p>
+                <p class="stats-list__name">Foreign languages</p>
               </li>
             </ul>
           </div>
-          <img src="./images/about.jpg" width="540" height="540" alt="people at mountain" />
+          <img
+            class="about__image"
+            src="./images/about.jpg"
+            width="540"
+            height="540"
+            alt="people at mountain"
+          />
         </div>
       </section>
       <section class="price">
         <div class="container">
-          <h2 class="price-title title">Pricing</h2>
+          <h2 class="price__title title">Pricing</h2>
           <ul class="price-list">
-            <li class="price-item">
-              <div class="price-item-top">
+            <li class="price-list__item">
+              <div class="price-list__top">
                 <img
-                  class="price-img"
+                  class="price-list__img"
                   src="./images/price-1.png"
                   alt="online test"
                   width="426"
                   height="320"
                 />
-                <h3 class="price-list-title min-title">Self-study online course</h3>
-                <p class="price-text">
+                <h3 class="price-list__title min-title">Self-study online course</h3>
+                <p class="price-list__text">
                   Start learning English online in live classes with qualified EC teachers and
                   students from all over the world.
                 </p>
               </div>
-              <div class="price-bottom">
-                <p class="price-bottom-count">£5.99</p>
-                <p class="price-bottom-period">per month</p>
+              <div class="price-list__bottom">
+                <p class="price-list__count">£5.99</p>
+                <p class="price-list__period">per month</p>
               </div>
             </li>
-            <li class="price-item">
-              <div class="price-item-top">
+            <li class="price-list__item">
+              <div class="price-list__top">
                 <img
-                  class="price-img"
+                  class="price-list__image"
                   src="./images/price-2.png"
                   alt="lesson"
                   width="426"
                   height="320"
                 />
-                <h3 class="price-list-title min-title">Live online classes</h3>
-                <p class="price-text">
+                <h3 class="price-list__title min-title">Live online classes</h3>
+                <p class="price-list__text">
                   Interactive group classes with expert teachers. Free 7-day trial
                 </p>
               </div>
-              <div class="price-bottom">
-                <p class="price-bottom-count">£12.99</p>
-                <p class="price-bottom-period">per month</p>
+              <div class="price-list__bottom">
+                <p class="price-list__count">£12.99</p>
+                <p class="price-list__period">per month</p>
               </div>
             </li>
-            <li class="price-item">
-              <div class="price-item-top">
+            <li class="price-list__item">
+              <div class="price-list__top">
                 <img
-                  class="price-img"
+                  class="price-list__image"
                   src="./images/price-3.png"
                   alt="online meeting"
                   width="426"
                   height="320"
                 />
-                <h3 class="price-list-title min-title">Personal Tuition</h3>
-                <p class="price-text">
+                <h3 class="price-list__title min-title">Personal Tuition</h3>
+                <p class="price-list__text">
                   Online one-to-one English tutoring – enjoy our first session for only $1
                 </p>
               </div>
-              <div class="price-bottom">
-                <p class="price-bottom-count">£12.99</p>
-                <p class="price-bottom-period">per month</p>
+              <div class="price-list__bottom">
+                <p class="price-list__count">£12.99</p>
+                <p class="price-list__period">per month</p>
               </div>
             </li>
           </ul>
@@ -308,7 +322,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button" data-modal-close>closed</button>
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
         <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form">
           <label class="modal-label">
