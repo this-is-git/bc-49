@@ -1,0 +1,248 @@
+@import './utils/vars';
+@import './base/normalize';
+@import './base/reset';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common';
+
+@import './components/header';
+@import './components/hero';
+@import './components/skills';
+@import './components/about';
+@import './components/price';
+
+/* about */
+
+/* price */
+
+/* .item-box {
+  display: flex;
+}
+
+.icons {
+  padding-top: 20px;
+}
+
+.item-icon {
+  max-width: 270px;
+}
+
+.icon {
+  fill: #afb1b8;
+}
+
+.icon-link,
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #2196f3;
+}
+
+.icon-link:hover .icon,
+.icon-link:focus .icon {
+  fill: #fff;
+} */
+
+.item-box {
+  display: flex;
+}
+
+.icons {
+  padding-top: 20px;
+}
+
+.item-icon {
+  max-width: 270px;
+}
+
+.icon-link,
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8f95a5;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000070;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transition-dir) var(--transition-time-func),
+    visibility var(--transition-dir) var(--transition-time-func);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  transition: transform var(--transition-dir) var(--transition-time-func);
+  padding: 40px;
+}
+
+.modal-title {
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.modal-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-label > input,
+.modal-label > textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-label > input {
+  padding: 7px 0;
+  padding-left: 35px;
+  padding-right: 5px;
+}
+
+.modal-label > input:hover,
+.modal-label > input:focus {
+  border-color: #2196f3;
+  outline: 1px solid transparent;
+}
+
+.modal-label > input:hover ~ .modal-icon,
+.modal-label > input:focus ~ .modal-icon {
+  fill: #2196f3;
+}
+
+.modal-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.modal-label > textarea {
+  padding: 12px 16px;
+}
+
+.modal-label > textarea::placeholder {
+  color: rgb(169, 169, 169);
+  font-size: 12px;
+}
+
+.modal-comment {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #000000;
+  transition: color 250ms linear;
+}
+
+.modal-button:hover {
+  color: #2196f3;
+}
+
+.modal__icon {
+  fill: currentColor;
+}
+
+/* custom checkbox */
+
+.modal-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox-custom {
+  height: 19px;
+  width: 19px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms linear;
+}
+
+.checkbox-icon {
+  fill: transparent;
+  transition: fill 250ms linear;
+}
+
+.modal-checkbox:checked + .checkbox-custom {
+  background-color: #2196f3;
+}
+
+.modal-checkbox:checked + .checkbox-custom > .checkbox-icon {
+  fill: red;
+}

@@ -1,0 +1,30 @@
+.price-list {
+  display: flex;
+  gap: 30px;
+  &__top {
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 20px;
+    line-height: calc(48 / 30);
+  }
+  &__bottom {
+    display: flex;
+    gap: 28px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding: 0 23px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    max-width: 260px;
+    margin-top: auto;
+  }
+}

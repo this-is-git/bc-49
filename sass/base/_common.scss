@@ -1,0 +1,38 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: var(--main-color);
+}
+
+body.is-active {
+  overflow: hidden;
+  padding-bottom: 370px;
+}
+
+.container {
+  max-width: 1368px;
+  padding: 0 15px;
+  outline: 5px solid tomato;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--black-color);
+  margin-bottom: 60px;
+}
+
+.min-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--min-title-color);
+}
+
+.logo {
+  color: var(--black-color);
+  font-size: 36px;
+  margin-right: auto;
+}
