@@ -1,52 +1,76 @@
 .skills {
-  padding-top: 134px;
-  padding-bottom: 178px;
+  padding-top: 53px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 574.98px) {
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
   &__title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+    @media screen and (min-width: 574.98px) {
+      font-size: 30px;
+      line-height: calc(80 / 30);
+      margin-bottom: 5px;
+    }
   }
 }
 
 .skills-list {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  // display: grid;
+  // gap: 30px;
+  // grid-template-columns: repeat(3, 1fr);
+  @media screen and (min-width: 574.98px) {
+    display: flex;
+    gap: 34px 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .skills-list__item {
-  padding: 32px 18px;
+  padding: 0 16px;
+  padding-bottom: 44px;
+  padding-top: 25px;
   background-color: var(--secondary-bg-color);
-  &:first-child {
-    grid-row-start: 1;
-    grid-row-end: 3;
+  @media screen and (max-width: 574.98px) {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
   }
-  &:last-child {
+  @media screen and (min-width: 574.98px) {
+    width: calc((100% - 30px) / 2);
     display: flex;
-    flex-direction: row-reverse;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    justify-content: space-between;
+    flex-direction: column;
   }
+  // &:first-child { // grid-row-start: 1; // grid-row-end: 3; // } // &:last-child { // display: flex; // flex-direction: row-reverse; // grid-column-start: 2; // grid-column-end: 4; // };
 }
 
 .skills-list__title {
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: calc(80 / 18);
+  margin-bottom: 16px;
 }
 
 .skills-list__text {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  margin-bottom: 38px;
 }
 
 .skills-list__image {
-  margin-bottom: 24px;
+  margin-bottom: 11px;
+  &:last-child {
+    margin-bottom: 19px;
+  }
 }
 
 .skills-list__btn {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--white-color);
   background-color: var(--min-title-color);
-  min-width: 230px;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  min-width: 178px;
+  padding: 14.5px 0;
+  border-radius: 5px;
 }

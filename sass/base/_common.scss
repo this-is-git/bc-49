@@ -12,17 +12,16 @@ body.is-active {
 }
 
 .container {
-  max-width: 1368px;
-  padding: 0 15px;
-  outline: 5px solid tomato;
+  max-width: 480px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
 .title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 24px;
+  line-height: calc(80 / 24);
   color: var(--black-color);
-  margin-bottom: 60px;
 }
 
 .min-title {

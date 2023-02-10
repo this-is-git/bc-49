@@ -7,6 +7,10 @@
 
 .navigations {
   margin-right: 121px;
+  display: none;
+  @media screen and (min-width: 991.98px) {
+    display: block;
+  }
 }
 
 .navigations__list {
@@ -53,5 +57,9 @@
     background-color: var(--min-title-color);
     color: var(--white-color);
     border-color: var(--white-color);
+  }
+  display: none;
+  @media screen and (min-width: 991.98px) {
+    display: block;
   }
 }

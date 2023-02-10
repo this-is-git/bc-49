@@ -1,39 +1,58 @@
 .hero {
-  padding-top: 101px;
+  padding-top: 29px;
+  @media screen and (min-width: 574.98px) {
+    padding-top: 11px;
+  }
+  &__image {
+    margin-bottom: 16px;
+  }
   &__wrapper {
-    display: flex;
   }
   &__content {
-    width: 546px;
-    margin-right: 123px;
   }
   &__title {
+    max-width: 220px;
     font-weight: 600;
-    font-size: 64px;
-    line-height: calc(80 / 64);
+    font-size: 24px;
     color: var(--black-color);
-    margin-bottom: 57px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @media screen and (min-width: 574.98px) {
+      font-size: 31px;
+      line-height: calc(45 / 31);
+      max-width: 491px;
+      margin-bottom: 26px;
+    }
   }
   &__text {
-    font-size: 24px;
-    margin-bottom: 43px;
-    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px,
-      rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px,
-      rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px,
-      rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    font-size: 14px;
+    margin-bottom: 33px;
+    text-align: center;
+    @media screen and (min-width: 574.98px) {
+      font-size: 16px;
+      margin-bottom: 37px;
+    }
   }
   &__button {
-    font-size: 36px;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--white-color);
     background-color: var(--min-title-color);
-    min-width: 426px;
-    padding: 22px 0;
+    min-width: 289px;
+    padding: 17px 0;
     background-color: var(--min-title-color);
     border: 1px solid var(--black-color);
-    border-radius: 10px;
+    border-radius: 5px;
     @extend %btn-global-style;
-    background-color: red;
+    @media screen and (min-width: 574.98px) {
+      font-size: 18px;
+      padding: 23px 0;
+      min-width: 305px;
+    }
   }
 }
